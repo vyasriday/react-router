@@ -4,6 +4,7 @@ import { Route, Link, BrowserRouter as Router } from 'react-router-dom';
 
 import One from './lessons/One';
 import Two from './lessons/Two';
+import Three from './lessons/Three';
 
 const App = () => {
   return (
@@ -20,12 +21,15 @@ const App = () => {
           path="/:id"
           render={() => (
             <h3>
-              <Link to="/">&larr;</Link>
+              <Link to="/" style={{ color: 'red' }}>
+                Back
+              </Link>
             </h3>
           )}
         />
         <Route path="/lesson1" component={One} />
         <Route path="/lesson2" component={Two} />
+        <Route path="/lesson3" component={Three} />
       </div>
     </Router>
   );

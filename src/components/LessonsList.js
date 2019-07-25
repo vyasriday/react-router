@@ -13,6 +13,9 @@ const LessonsList = () => {
         <li>
           <Link to="/lesson2">Lesson 2 [URL Paramters]</Link>
         </li>
+        <li>
+          <Link to="/lesson3">Lesson 3 [Nested Routes]</Link>
+        </li>
       </ul>
     </WrapperDIV>
   );
